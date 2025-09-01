@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
 
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <h1>Job application form</h1>
+      <h1>Job application form</h1>
     </header>
 
     <main class="main">
-        <form action="" class="form-container">
-            <div class="inp">
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name">
-            </div>
-            <div class="inp">
-                 <label for="last_name">Last name</label>
-                <input type="text" id="last_name" name="last_name">
-            </div>
-            <div class="inp">
-                 <label for="email">email</label>
-                <input type="text" id="email" name="email">
-            </div>
-            <div class="inp">
-                 <label for="job_role">job role</label>
-                <input type="text" id="job_role" name="job_role">
-            </div>
-            <div class="inp">
-                 <label for="why">Why this role</label>
-                <textarea name="why" id="why"></textarea>
-            </div>
+      <form action="" class="form-container">
+        <fieldset>
+          <legend>Personal information</legend>
+          <label for="first_name">First Name</label>
+          <input type="text" id="first_name" name="first_name" />
 
-            <div class="inp">
-                <label for="city">city</label>
-                <input type="text" id="city" name="city">
-            </div>
-            <div class="inp">
-                <label for="country">country</label>
-                <input type="text" id="country" name="country">
-            </div>
-            <div class="inp">
-                <label for="date">date</label>
-                <input type="text" id="date" name="date">
-            </div>
-            <div class="inp">
-                <label for="upload">upload your cv</label>
-                <input type="text" id="upload" name="upload">
-            </div>
+          <label for="last_name">Last name</label>
+          <input type="text" id="last_name" name="last_name" />
 
-            <button type="submit">Apply Now</button>
-        </form>
+          <label for="email">email</label>
+          <input type="email" id="email" name="email" />
+        </fieldset>
+
+        <fieldset>
+          <legend>job details</legend>
+
+          <label for="job_role">job role</label>
+          <input type="text" id="job_role" name="job_role" />
+
+          <label for="why">Why this role</label>
+          <textarea name="why" id="why"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Other Informations</legend>
+
+          <label for="city">city</label>
+          <input type="text" id="city" name="city" />
+
+          <label for="country">country</label>
+          <input type="text" id="country" name="country" />
+
+          <label for="date">date</label>
+          <input type="date" id="date" name="date" />
+
+          <label for="upload">upload your cv</label>
+          <input type="file" id="upload" name="upload" />
+        </fieldset>
+
+        <button type="submit">Apply Now</button>
+      </form>
     </main>
-</body>
+  </body>
 </html>
